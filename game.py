@@ -15,23 +15,24 @@ class Game:
         if deficulte=="difficile":
             return random.randint(1, 100),1
 
-    def serie_simon(slef,deficulte):
-        import time
-        nombre=generer_un_nombre(deficulte)
+    def serie_simon(self):
+        import time,os
+        nombre=self.generer_un_nombre(self.player.deficulte)
+        self.serie.append(nombre[0])
         #affichage de la serie
-        for i in serie:
-            time.sleep(nombre[1])
-            print(i)
+        print(self.serie)
+        time.sleep(nombre[1])
+        os.system("clear")
         message=""
         #verification si il a gagné
-        for i in serie:
-            entrer=int(input("nombre: "))
-            if entrez != i:
+        for i in self.serie:
+            entrer=self.player.jouer()
+            if entrer != i:
                 message="lose"
                 break
         return message
 
-
+    
         
 
 

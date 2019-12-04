@@ -11,11 +11,12 @@ class Partie:
     
     def partie(self):
         
-        message=self.game.serie_simon(self.player.deficulte)
+        message=""
         while message !="lose":
-            nombre=self.game.palyer.jouer()
-            message=serie(self.palyer.deficulte)
+            message=self.game.serie_simon()
         self.game.player.score=len(self.game.serie)-1
+        return "votre score est {} ".format(self.game.player.score)
+
 
         
 
