@@ -1,13 +1,13 @@
 class Player:
     
     def __init__(self):
-        self.score=0 #initialisation du score a zero
-        self.deficulte="" #initialisation du deficulté a null
-        nom=""
-        while not nom.isalpha() or len(nom)<2:
-            nom=input("entrez votre nom: ")
-        print("bienvenue {} ".format(nom))
-        self.nom=nom
+        self.score=0 #initialisation of score  zero
+        self.deficulte="" #initialisation of deficulté  null
+        name=""
+        while not name.isalpha() or len(name)<2:
+            name=input("entrez votre nom: ")
+        print("bienvenue {} ".format(name))
+        self.name=name
     
     def choix_deficulte(self):
         liste=["facile","moyen","difficile"]
@@ -17,9 +17,9 @@ class Player:
         self.deficulte=repense
 
     
-    def jouer(self):
+    def play(self):
         try:
-            nombre=int(input("entrez la serie du nombre afficher a l'écran: "))
-            return nombre
+            number=int(input("entrez la serie de nombre affiché a l'écran: "))
+            return number
         except:
-            "print vous avez tapez autre chose qu'un nombre entier"
+            return -1

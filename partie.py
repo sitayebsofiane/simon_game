@@ -3,8 +3,9 @@ from game import Game
 
 class Partie:
 
-    def __init__(self):
-        self.player=Player()
+    def __init__(self,player):
+        # instanciation of game
+        self.player=player
         self.player.choix_deficulte()
         self.game=Game(self.player)
 
@@ -15,7 +16,7 @@ class Partie:
         while message !="lose":
             message=self.game.serie_simon()
         self.game.player.score=len(self.game.serie)-1
-        return "votre score est {} ".format(self.game.player.score)
+        return " a un  score de {} avec le niveau {} .".format(self.game.player.score,self.game.player.deficulte)
 
 
         

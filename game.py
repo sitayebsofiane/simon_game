@@ -5,8 +5,8 @@ class Game:
         self.serie=list()
         self.player= player
 
-    # retourne le nombre aleatoire et le temps de sleep
-    def generer_un_nombre(self, deficulte):
+    # retourn random number and time of each livel deficulte 
+    def generate_number(self, deficulte):
         import random
         if deficulte=="facile":
             return random.randint(1, 10),3 
@@ -17,16 +17,16 @@ class Game:
 
     def serie_simon(self):
         import time,os
-        nombre=self.generer_un_nombre(self.player.deficulte)
+        nombre=self.generate_number(self.player.deficulte)
         self.serie.append(nombre[0])
-        #affichage de la serie
-        print(self.serie)
+        #display seris
+        print(" ".join(str(x) for x in self.serie))
         time.sleep(nombre[1])
         os.system("clear")
         message=""
-        #verification si il a gagné
+        #check if he win
         for i in self.serie:
-            entrer=self.player.jouer()
+            entrer=self.player.play()
             if entrer != i:
                 message="lose"
                 break

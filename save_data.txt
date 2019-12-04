@@ -1,0 +1,4 @@
+le joueur thomas : a un  score de 1 avec le niveau facile .
+ a un  score de 3 avec le niveau moyen .
+le joueur hhh : a un  score de 2 avec le niveau difficile .
+le joueur mahydine : a un  score de 4 avec le niveau moyen .
