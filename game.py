@@ -1,9 +1,9 @@
 from player import Player
 class Game:
 
-    def __init__(self,player,serie):
+    def __init__(self,player):
         self.serie=list()
-        self.palyer= palyer
+        self.player= player
 
     # retourne le nombre aleatoire et le temps de sleep
     def generer_un_nombre(self, deficulte):
@@ -15,7 +15,7 @@ class Game:
         if deficulte=="difficile":
             return random.randint(1, 100),1
 
-    def generer_une_serie(slef,deficulte):
+    def serie_simon(slef,deficulte):
         import time
         nombre=generer_un_nombre(deficulte)
         #affichage de la serie
