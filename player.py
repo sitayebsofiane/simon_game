@@ -6,6 +6,7 @@ class Player:
         nom=""
         while not nom.isalpha() or len(nom)<2:
             nom=input("entrez votre nom: ")
+        print("bienvenue {} ".format(nom))
         self.nom=nom
     
     def choix_deficulte(self):
