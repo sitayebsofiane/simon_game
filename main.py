@@ -2,14 +2,14 @@ from part import Part,Player
 if __name__ == "__main__":
 
     player=Player()
-    save="le joueur {} :".format(player.name)
+    save=""
 
     do_you_play="oui"
     while do_you_play!="non":
         #instanciation of Parite with his attribut palyer
         part=Part(player)
         # the part begining....
-        save+=part.part()
+        save+=str(part.part())
         # i display the result of part
         print(save)
         # i save the score in file save_data in format text

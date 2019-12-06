@@ -8,7 +8,7 @@ class Player:
             name=input("entrez votre nom: ")
         print("bienvenue {} ".format(name))
         self.name=name
-    
+    # slect difficult of game
     def choix_deficulte(self):
         liste=["facile","moyen","difficile"]
         repense=""
@@ -16,7 +16,7 @@ class Player:
             repense=input("quel niveau de dificulté vous souhaité parmis {}".format(liste))
         self.deficulte=repense
 
-    
+    # the method to ask number for play 
     def play(self):
         import os
         try:
@@ -25,3 +25,9 @@ class Player:
             return number
         except:
             return -1
+    # the method represente of palyer
+    def __str__(self):
+        """when we ask our object palyer we have informations"""
+        return " nom({}), deficulte({}), score({})".format(
+                self.name, self.deficulte, self.score)
+    

@@ -14,7 +14,7 @@ class Part:
         
         while self.game.serie_simon():pass
         self.game.player.score=len(self.game.serie)-1
-        return " a un  score de {} avec le niveau {} .".format(self.game.player.score,self.game.player.deficulte)
+        return self.player
 
 
         

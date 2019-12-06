@@ -1,6 +1,1 @@
-le joueur kevin : a un  score de 2 avec le niveau facile .
-le joueur kevin : a un  score de 1 avec le niveau moyen .
- a un  score de 1 avec le niveau moyen .
-le joueur bbbb : a un  score de 0 avec le niveau difficile .
-le joueur kevin : a un  score de 3 avec le niveau difficile .
-le joueur emira : a un  score de 2 avec le niveau facile .
+ 
