@@ -20,17 +20,14 @@ class Game:
         nombre=self.generate_number(self.player.deficulte)
         self.serie.append(nombre[0])
         #display seris
-        print(" ".join(str(x) for x in self.serie))
-        time.sleep(nombre[1])
-        os.system("clear")
-        message=""
-        #check if he win
         for i in self.serie:
-            entrer=self.player.play()
-            if entrer != i:
-                message="lose"
-                break
-        return message
+            print(i)
+            time.sleep(nombre[1])
+            os.system("clear")
+
+        #check if he win
+        return all(self.player.play() == x for x in self.serie)
+        
 
     
         
