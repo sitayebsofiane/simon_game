@@ -1,4 +1,4 @@
-from partie import Part,Player
+from part import Part,Player
 if __name__ == "__main__":
 
     player=Player()
